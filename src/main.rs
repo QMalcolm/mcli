@@ -13,4 +13,5 @@ struct Cli {
 fn main() {
     let args = Cli::from_args();
     println!("{}", args.pattern);
+    println!("{}", args.path.to_string_lossy());
 }
